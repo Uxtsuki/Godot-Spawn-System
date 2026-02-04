@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SpawnOption" format=3 uid="uid://ba2tbpmus6jhs"]
+
+[ext_resource type="Script" uid="uid://bvcekhuol16s3" path="res://Spawn System/spawn_variation.gd" id="1_sftoj"]
+[ext_resource type="Script" uid="uid://bqbufght2ugfl" path="res://Spawn System/spawn_option.gd" id="2_7ql3e"]
+[ext_resource type="Resource" uid="uid://12oqmypgho82" path="res://Variations/entity1.tres" id="2_bjiql"]
+[ext_resource type="Resource" uid="uid://vymlsxn16smw" path="res://Variations/entity2.tres" id="3_ypql3"]
+[ext_resource type="Resource" uid="uid://cp4nq8hpvgxaq" path="res://Variations/entity3.tres" id="4_fynbh"]
+[ext_resource type="Resource" uid="uid://cljmp8fvgaln6" path="res://Variations/entity4.tres" id="5_42244"]
+
+[resource]
+script = ExtResource("2_7ql3e")
+_group = "Option1"
+_active = true
+_points = Array[NodePath]([NodePath("Marker2D"), NodePath("Marker2D2"), NodePath("Marker2D3"), NodePath("Marker2D4")])
+_variations = Array[ExtResource("1_sftoj")]([ExtResource("2_bjiql"), ExtResource("3_ypql3"), ExtResource("4_fynbh"), ExtResource("5_42244")])
+_timer_type = 3
+_time_limit = 2.0
+_repetition = 1
+metadata/_custom_type_script = "uid://bqbufght2ugfl"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="SpawnVariation" format=3 uid="uid://cljmp8fvgaln6"]
+
+[ext_resource type="PackedScene" uid="uid://cybmae58mq8t7" path="res://Variations/node_2d_legendary.tscn" id="1_xyw0t"]
+[ext_resource type="Script" uid="uid://bvcekhuol16s3" path="res://Spawn System/spawn_variation.gd" id="2_nh4mu"]
+
+[resource]
+script = ExtResource("2_nh4mu")
+_name = "Legendary"
+_group = "spawner1"
+_timer = 2.0
+_time_limit = 7.0
+_scene = ExtResource("1_xyw0t")
+_active = true
+_proportion = 1
+metadata/_custom_type_script = "uid://bvcekhuol16s3"
