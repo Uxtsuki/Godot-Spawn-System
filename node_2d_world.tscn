@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bbvs8rwupkryd"]
+
+[ext_resource type="Script" uid="uid://cx8ydliilwn66" path="res://node_2d_world.gd" id="1_8r180"]
+[ext_resource type="PackedScene" uid="uid://ddevrb03rb1e3" path="res://Spawn System/node_2d_spawner.tscn" id="2_cicok"]
+[ext_resource type="Script" uid="uid://bqbufght2ugfl" path="res://Spawn System/spawn_option.gd" id="3_7yhlt"]
+[ext_resource type="Resource" uid="uid://ba2tbpmus6jhs" path="res://Variations/SpawnOption1.tres" id="4_5n3hn"]
+
+[node name="Node2DWorld" type="Node2D" unique_id=1250381068]
+script = ExtResource("1_8r180")
+
+[node name="Timer" type="Timer" parent="." unique_id=1604578495]
+wait_time = 5.0
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1831309137]
+position = Vector2(900, 196)
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=1920943087]
+position = Vector2(974, 417)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=1512710631]
+position = Vector2(764, 506)
+
+[node name="Marker2D4" type="Marker2D" parent="." unique_id=1785815773]
+position = Vector2(661, 326)
+
+[node name="Node2DSpawner" parent="." unique_id=1838377670 instance=ExtResource("2_cicok")]
+_active = true
+_wave = Dictionary[int, Array]({})
+_options = Array[ExtResource("3_7yhlt")]([ExtResource("4_5n3hn")])
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

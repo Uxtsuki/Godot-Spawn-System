@@ -1,0 +1,38 @@
+{
+	"1": [
+		{
+			"type": 0,
+			"entity": "res://Variations/Entity1.tres",
+			"x": 400,
+			"y": 400,
+			"repetition": 10,
+			"min_time_gap": 0.01
+		},
+		{
+			"type": 1,
+			"time": 1.5,
+		},
+	],
+	"2": [
+		{
+			"type": 0,
+			"entity": "res://Variations/Entity2.tres",
+			"x": 500,
+			"y": 500,
+			"repetition": 5,
+			"min_time_gap": 0.2
+		},
+		{
+			"type": 1,
+			"time": 1.5,
+		},
+		{
+			"type": 0,
+			"entity": "res://Variations/Entity3.tres",
+			"x": 600,
+			"y": 600,
+			"repetition": 5,
+			"min_time_gap": 0.2
+		}
+	]
+}
