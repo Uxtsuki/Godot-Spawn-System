@@ -30,7 +30,7 @@ enum WAVE_ACTION { SPAWN, WAIT }
 @export var _options : Array[SpawnOption] = []
 
 func _process(delta: float) -> void:
-	if !_active || (_use_active_function && !_active_function.call()):
+	if !_active && (_use_active_function && !_active_function.call()):
 		return
 	if _wave.size() > 0:
 		_next_action()
